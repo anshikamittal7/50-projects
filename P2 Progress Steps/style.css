@@ -1,0 +1,45 @@
+body {
+  min-height: 90vh;
+  background-color: rgb(206, 206, 206);
+}
+.container {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  display: flex;
+  flex-direction: row;
+}
+.steps {
+  /* background-color: red; */
+  width: 5vmin;
+  height: 5vmin;
+  border: 4px solid rgb(139, 138, 140);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space {
+  width: 100px;
+  background-color: rgb(139, 138, 140);
+  height: 4px;
+  display: flex;
+  align-self: center;
+}
+button {
+  margin: 5vmin 5vmin 0 5vmin;
+  width: 15vmin;
+  height: 5vmin;
+  border-radius: 1vmin;
+  border: 0px;
+}
+.blueBkg {
+  background-color: rgb(74, 55, 245);
+}
+.blueBorder {
+  border: 4px solid rgb(74, 55, 245);
+}
