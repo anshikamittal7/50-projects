@@ -85,14 +85,13 @@ a {
   display: flex;
   flex-direction: column;
 }
-h1 {
-  margin-bottom: 0px;
-}
+
 #authorname {
   font-style: italic;
   font-size: small;
   opacity: 70%;
 }
+
 .active {
   transform: rotate(-20deg);
   transform-origin: top left;
