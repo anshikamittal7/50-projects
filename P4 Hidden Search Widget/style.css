@@ -19,7 +19,7 @@ body {
 
 .searchbox {
   position: absolute;
-  height: 5vmin;
+  height: 35px;
   width: 10px;
   border: 0;
   transition: 0.3s ease;
