@@ -10,4 +10,4 @@ let interval = setInterval(() => {
         percentage.remove();
         clearInterval(interval);
     }
-}, 3)
+}, 4)
