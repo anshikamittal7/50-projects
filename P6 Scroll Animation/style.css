@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(190, 170, 217);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 2.5em;
+}
+.content {
+  width: 350px;
+  height: 150px;
+  background-color: rgb(230, 255, 129);
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-size: 2em;
+  transform: translateX(2000px);
+  transition: 1s ease;
+}
+
+.content:nth-of-type(even) {
+  transition: 1s ease;
+  transform: translateX(-2000px);
+}
+.show,
+.show:nth-of-type(even) {
+  transform: translateX(0);
+}
