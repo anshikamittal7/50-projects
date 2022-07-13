@@ -12,7 +12,7 @@ h1 {
 }
 .content {
   width: 350px;
-  height: 150px;
+  height: 200px;
   background-color: rgb(230, 255, 129);
   margin-bottom: 60px;
   display: flex;
