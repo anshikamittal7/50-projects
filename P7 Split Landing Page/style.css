@@ -62,6 +62,7 @@ button {
   color: #ffffff;
   font-size: 2vmin;
   margin: 7vmin;
+  text-align: center;
 }
 #ps5btn:hover {
   background-color: rgba(255, 255, 0, 0.426);
