@@ -31,7 +31,7 @@ h1 {
   align-items: center;
   flex-direction: column;
   transition: 1s;
-  background-image: url("https://cdn.vox-cdn.com/thumbor/gI7tqdzx4pI1PIIbHfRVeyq24mI=/0x0:2040x1148/1820x1024/filters:focal(857x411:1183x737):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/67694300/vpavic_4261_20201023_0058.0.jpg");
+  background-image: url("https://images7.alphacoders.com/114/1147129.jpg");
   background-size: cover;
 }
 .xbox {
@@ -58,18 +58,23 @@ button {
   border: 2px solid rgb(255, 255, 255);
   background-color: transparent;
   height: 8vmin;
-  width: 20vmin;
+  width: 23vmin;
   color: #ffffff;
-  font-size: 3vmin;
-  margin: 20px;
+  font-size: 2vmin;
+  margin: 7vmin;
 }
-button:hover {
+#ps5btn:hover {
   background-color: rgba(255, 255, 0, 0.426);
-  box-shadow: 0 3px 6px rgb(250, 245, 245);
+  border: 2px rgba(255, 255, 0, 0.426);
+  color: black;
+}
+#xboxbtn:hover {
+  background-color: rgba(30, 255, 0, 0.426);
+  border: 2px rgba(30, 255, 0, 0.426);
   color: black;
 }
 .active {
-  width: 100%;
+  width: 90%;
   transition: 1s;
 }
 
