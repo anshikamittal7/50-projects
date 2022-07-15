@@ -23,6 +23,7 @@ h1 {
   font-size: 6vmin;
   font-weight: 700;
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 .ps5 {
   height: 100vh;
@@ -62,7 +63,6 @@ button {
   color: #ffffff;
   font-size: 2vmin;
   margin: 7vmin;
-  text-align: center;
 }
 #ps5btn:hover {
   background-color: rgba(255, 255, 0, 0.426);
