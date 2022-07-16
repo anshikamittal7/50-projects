@@ -13,11 +13,18 @@
     <div class="container">
         <h1>Please Login</h1>
         <form action="">
-            <input type="email" id="mail">
-            <input type="password" id="pw">
+            <div class="form-control">
+                <label class="email">Email</label>
+                <input type="email" required>
+            </div>
+            <div class="form-control">
+                <label class="password">Password</label>
+                <input type="password" required>
+            </div>
             <button>Login</button>
+            <p class="text">Don't have an acccount?<a href="index.html"> Register </a></p>
         </form>
-        <p>Don't have an acccount?<a href="index.html"> Register </a></p>
+        <script src="script.js"></script>
     </div>
 </body>
 
