@@ -1,12 +1,13 @@
 const sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong']
+const conatiner = document.querySelector('.container');
 sounds.forEach(sound => {
 
     const audio = document.createElement('audio');
     audio.src = `https://50projects50days.com/projects/sound-board/sounds/${sound}.mp3`;
-    document.body.appendChild(audio);
+    conatiner.appendChild(audio);
     const btn = document.createElement('button');
     btn.innerText = sound;
-    document.body.appendChild(btn)
+    conatiner.appendChild(btn)
 
     btn.addEventListener('click', () => {
         stop();
