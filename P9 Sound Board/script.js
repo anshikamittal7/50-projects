@@ -18,5 +18,6 @@ const allAudios = document.querySelectorAll('audio');
 function stop() {
     allAudios.forEach(audio => {
         audio.pause();
+        audio.currentTime = 0;
     })
 }
