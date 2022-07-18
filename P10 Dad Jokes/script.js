@@ -18,13 +18,13 @@ const getJokes = async () => {
         return "NO JOKES AVAILABLE!";
     }
 }
-
 const addJoke = async () => {
     const joke = await getJokes();
     jokediv.innerText = joke;
 }
 addJoke();
 btn.addEventListener('click', () => {
-    document.body.style.background = `linear-gradient(to right, ${colorGenerator()}, ${colorGenerator()})`
+    addJoke();
+    document.body.style.background = `linear-gradient(to right, ${colorGenerator()}, ${colorGenerator()})`;
+
 });
-btn.addEventListener('click', addJoke);
