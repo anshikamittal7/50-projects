@@ -4,7 +4,12 @@
 }
 body {
   min-height: 100vh;
-  background-image: linear-gradient(to right, lightblue, darkblue);
+  background-image: linear-gradient(
+    to right,
+    rgb(184, 109, 119),
+    rgb(192, 147, 248)
+  );
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +30,9 @@ body {
 h3 {
   color: rgb(91, 91, 91);
   margin-bottom: 50px;
+}
+#joke {
+  text-align: center;
 }
 button {
   background-color: rgb(116, 56, 133);
