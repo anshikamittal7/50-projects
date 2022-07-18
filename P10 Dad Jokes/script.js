@@ -1,8 +1,5 @@
 const btn = document.querySelector('button')
-btn.addEventListener('click', () => {
-
-    document.body.style.background = `linear-gradient(to right, ${colorGenerator()}, ${colorGenerator()})`
-});
+const jokediv = document.getElementById('joke');
 
 function colorGenerator() {
     let r = Math.floor(Math.random() * 256);
@@ -12,4 +9,27 @@ function colorGenerator() {
     return color;
 }
 
-const url = 'GET https://icanhazdadjoke.com/';
+const getJokes = async () => {
+    try {
+        const res = await axios.get(" https://icanhazdadjoke.com", { headers: { Accept: 'application/json' } });
+        return res.data.joke;
+    }
+    catch (e) {
+        return "NO JOKES AVAILABLE!";
+    }
+}
+
+const addJoke = async () => {
+    const joke = await getJokes();
+    jokediv.innerText = joke;
+}
+
+let flag = true;
+btn.addEventListener('click', () => {
+    if (flag == true) {
+        btn.innerText = 'Get another joke';
+        flag = false;
+    }
+    document.body.style.background = `linear-gradient(to right, ${colorGenerator()}, ${colorGenerator()})`
+});
+btn.addEventListener('click', addJoke);
