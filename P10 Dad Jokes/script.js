@@ -23,13 +23,8 @@ const addJoke = async () => {
     const joke = await getJokes();
     jokediv.innerText = joke;
 }
-
-let flag = true;
+addJoke();
+btn.addEventListener('click', addJoke);
 btn.addEventListener('click', () => {
-    if (flag == true) {
-        btn.innerText = 'Get another joke';
-        flag = false;
-    }
     document.body.style.background = `linear-gradient(to right, ${colorGenerator()}, ${colorGenerator()})`
 });
-btn.addEventListener('click', addJoke);
