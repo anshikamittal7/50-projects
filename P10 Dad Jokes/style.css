@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1s;
   overflow-x: hidden;
 }
 .container {

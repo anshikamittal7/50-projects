@@ -24,7 +24,7 @@ const addJoke = async () => {
     jokediv.innerText = joke;
 }
 addJoke();
-btn.addEventListener('click', addJoke);
 btn.addEventListener('click', () => {
     document.body.style.background = `linear-gradient(to right, ${colorGenerator()}, ${colorGenerator()})`
 });
+btn.addEventListener('click', addJoke);
