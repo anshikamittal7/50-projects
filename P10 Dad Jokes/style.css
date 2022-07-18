@@ -48,8 +48,10 @@ button {
   font-size: 18px;
   color: aliceblue;
 }
-button:valid,
 button:active {
+  transform: scale(0.98);
+}
+button:focus {
   outline: 0;
 }
 @media (max-width: 300px) {
