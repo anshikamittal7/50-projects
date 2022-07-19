@@ -22,7 +22,6 @@ for (let i = 0; i < downs.length; i++) {
         downs[i].classList.toggle('activedown')
         crosses[i].classList.toggle('activecross');
         quesBox[i].classList.remove('activequesBox');
-        // let ans = document.querySelector(`quesBox[${i}] span`);
         quesBox[i].removeChild(span[i]);
     })
 }
