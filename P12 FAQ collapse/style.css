@@ -30,7 +30,25 @@ h1 {
 }
 .activequesBox {
   height: 20vmin;
-  background-color: rgb(244, 248, 252);
+  position: relative;
+  background-color: rgb(244, 249, 255);
+}
+.activequesBox::after,
+.activequesBox::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f075";
+  color: rgb(29, 192, 137);
+  font-size: 15vmin;
+  position: absolute;
+  bottom: 12px;
+  z-index: 0;
+  opacity: 15%;
+}
+.activequesBox::before {
+  top: 0px;
+  left: 0px;
+  transform: rotatey(180deg);
+  color: rgb(40, 181, 228);
 }
 .ques {
   width: 90vmin;
@@ -42,12 +60,14 @@ h1 {
 }
 .ans {
   font-size: 2.7vmin;
-  color: blue;
+  color: rgb(0, 0, 209);
   font-style: italic;
   margin-top: 5vmin;
   display: none;
 }
-
+.ansactive {
+  display: flex;
+}
 .inactivecross {
   color: antiquewhite;
 }
@@ -60,7 +80,7 @@ h1 {
 .inactivedown {
   position: absolute;
   right: 0;
-  color: antiquewhite;
+  color: rgb(244, 249, 255);
 }
 .activedown {
   cursor: pointer;

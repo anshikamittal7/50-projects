@@ -9,7 +9,7 @@ for (let i = 0; i < downs.length; i++) {
         downs[i].classList.toggle('activedown')
         crosses[i].classList.toggle('activecross');
         quesBox[i].classList.add('activequesBox');
-        ans[i].style.display = 'flex';
+        ans[i].classList.add('ansactive')
     })
 }
 
@@ -19,7 +19,7 @@ for (let i = 0; i < downs.length; i++) {
         downs[i].classList.toggle('activedown')
         crosses[i].classList.toggle('activecross');
         quesBox[i].classList.remove('activequesBox');
-        ans[i].style.display = 'none';
+        ans[i].classList.remove('ansactive');
     })
 }
 
