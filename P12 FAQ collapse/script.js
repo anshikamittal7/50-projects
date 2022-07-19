@@ -1,7 +1,7 @@
 const downs = document.querySelectorAll('.down');
 const crosses = document.querySelectorAll('.cross');
 const quesBox = document.querySelectorAll('.quesBox');
-let span = new Array(5);
+const ans = document.querySelectorAll('.ans');
 
 for (let i = 0; i < downs.length; i++) {
     downs[i].addEventListener('click', () => {
@@ -9,10 +9,7 @@ for (let i = 0; i < downs.length; i++) {
         downs[i].classList.toggle('activedown')
         crosses[i].classList.toggle('activecross');
         quesBox[i].classList.add('activequesBox');
-        const ans = document.createElement('span');
-        span[i] = ans;
-        ans.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit ea nihil id? Quas amet numquam deleniti similique iure debitis, sint nemo ratione omnis, cupiditate in porro unde distinctio dignissimos?';
-        quesBox[i].appendChild(ans);
+        ans[i].style.display = 'flex';
     })
 }
 
@@ -22,7 +19,7 @@ for (let i = 0; i < downs.length; i++) {
         downs[i].classList.toggle('activedown')
         crosses[i].classList.toggle('activecross');
         quesBox[i].classList.remove('activequesBox');
-        quesBox[i].removeChild(span[i]);
+        ans[i].style.display = 'none';
     })
 }
 
