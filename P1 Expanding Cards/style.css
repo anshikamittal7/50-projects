@@ -1,5 +1,6 @@
 body {
   min-height: 90vh;
+  overflow: hidden;
 }
 .container {
   min-height: 90vh;
@@ -33,18 +34,18 @@ body {
   padding: 30px;
   font-size: 0;
   color: antiquewhite;
-  width: 5vmin;
+  width: 2%;
   height: 70vmin;
   border-radius: 5vmin;
   margin: 1vmin;
-  aspect-ratio: 2;
+  /* aspect-ratio: 2; */
   transition: 1s;
   opacity: 70%;
   display: flex;
   flex-direction: column-reverse;
 }
 .activePanel {
-  width: 100vmin;
+  width: 50%;
   height: 70vmin;
   font-size: 2em;
   color: antiquewhite;
